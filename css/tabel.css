@@ -1,0 +1,23 @@
+body {
+	font-family:arial,verdana;
+	font-size:12px;
+}
+
+th,td {
+	padding:5px 10px;
+	text-align:center;
+}
+
+/*warna header*/
+th {
+	background:#333;
+	color:#fff;
+}
+
+/*Efek Zebra */
+table tr : nth-child(odd) {
+	background:#aaa;
+}
+table tr : nth-child(even) {
+	background:#eee;
+}

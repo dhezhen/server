@@ -1,0 +1,1 @@
+Copyright &copy; <font color=black>Badan Penyelenggara Jaminan Produk Halal 2018  </font>
