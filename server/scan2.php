@@ -14,14 +14,15 @@
 		die(json_encode($response));
 	}
 	 */
-	$query = mysql_query("SELECT * FROM datahalal WHERE no_sertifikat='$no_sertifikat' ");
+	$query = mysql_query("SELECT * FROM datahalal WHERE no_sertifikat='00100007301297' ");
+	//$query = mysql_query("SELECT * FROM datahalal ");
 	
 	$row = mysql_fetch_array($query);
 	
 	if (!empty($row)){
 		$response = new usr();
-		$response->success = 1;
-		$response->message = "Data Halal no_sertifikat ".$row['no_sertifikat'];
+		///$response->success = 1;
+		//$response->message = "Data Halal no_sertifikat ".$row['no_sertifikat'];
 		$response->no_sertifikat = $row['no_sertifikat'];
 		$response->jenis = $row['jenis'];
 		$response->nama_produk = $row['nama_produk'];

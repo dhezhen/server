@@ -5,11 +5,12 @@
 	class usr{}	
 	$no_sertifikat = $_POST["no_sertifikat"];
 
-$imputText = $no_sertifikat;
+	$imputText = $no_sertifikat;
 $imputKey = "1234567890abcdef";
 $blockSize = 128;
 $aes = new AES($imputText, $imputKey, $blockSize);
 $dec=$aes->decrypt();
+
 	$query = mysql_query("SELECT * FROM datahalal WHERE no_sertifikat='$dec' ");
 	
 	$row = mysql_fetch_array($query);
